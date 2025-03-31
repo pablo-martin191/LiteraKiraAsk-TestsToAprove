@@ -1,0 +1,100 @@
+{
+  "name": "kira-ask",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@fluentui/react-components": "^9.60.0",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@types/react-dom": "18",
+    "@types/react-redux": "^7.1.34",
+    "@types/redux-logger": "^3.0.13",
+    "@types/redux-thunk": "^2.1.32",
+    "cra-template-typescript": "1.2.0",
+    "dotenv": "^16.4.7",
+    "dotenv-cli": "^8.0.0",
+    "react": "^18",
+    "react-app-rewired": "5.0.1",
+    "react-dom": "^18",
+    "react-dropzone": "^14.3.5",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.1.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^3.1.0",
+    "typescript-eslint": "^8.25.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "dotenv -e .env.development react-app-rewired build",
+    "coverage": "npm test",
+    "clearCache": "react-app-rewired test --clearCache",
+    "test": "npm run clearCache && react-app-rewired test --verbose --silent --watchAll=false",
+    "test:local": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "prepare": "husky install",
+    "build:dev": "dotenv -e .env.development react-app-rewired build",
+    "build:devcus": "dotenv -e .env.development react-app-rewired build",
+    "build:qa": "react-app-rewired build",
+    "build:perf": "react-app-rewired build",
+    "build:pen": "react-app-rewired build",
+    "build:staging": "react-app-rewired build",
+    "build:demo": "react-app-rewired build",
+    "build:prodeus2": "react-app-rewired build",
+    "build:prodweu": "react-app-rewired build",
+    "build:prodcca": "react-app-rewired build",
+    "build:prodneu": "react-app-rewired build",
+    "build:prodcus": "react-app-rewired build",
+    "build:prodeca": "react-app-rewired build",
+    "build:prodsuk": "react-app-rewired build",
+    "build:prodeau": "react-app-rewired build",
+    "build:prodseas": "react-app-rewired build",
+    "build:prodsbr": "react-app-rewired build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^8.0.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2",
+    "react-app-rewired": "^2.2.1",
+    "webpack": "^5.98.0"
+  }
+}
